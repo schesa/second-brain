@@ -42,3 +42,5 @@ Double Brace Initialisation - with anonymous class
         }
     };
 ```
+
+This() and Super() need to be the first statement in a block(they can not coexist)
