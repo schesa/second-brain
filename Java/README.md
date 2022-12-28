@@ -32,7 +32,7 @@ Memory Structure
 - PC registers: thread dependent
 - Native method stack: OS dependent
 
-Double Brace Initialisation - with anonymous class
+Double Brace Initialisation - with anonymous class - deprecated
 ```
     Set<String> countries = new HashSet<String>() {
         {
