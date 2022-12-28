@@ -22,8 +22,6 @@ Java is not a complete oop language (has primitives)
 
 Memory Model (multithreading - volatile to skip local thread cache)
 
-Memory Management
-
 Memory Structure
 - Method area: Perm,class structures, static fields
 - Heap Area: Eden,S0,S1,Old Generation
