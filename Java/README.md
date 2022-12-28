@@ -2,6 +2,7 @@
 
 
 Spring MVC
+
 JPA
 
 
@@ -15,6 +16,8 @@ Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Ex
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
 Thread lifecycle(New, Runnable, Running, Waiting, Dead)
+
+Thread can implement Runnable(flexible) or extend Thread
 
 Composition (part-of) vs Aggregation (has-a)
 
