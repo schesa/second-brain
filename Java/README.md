@@ -1,11 +1,16 @@
-## Java 
+### Spring
+
 
 Spring MVC
 JPA
 
+
+### Java 
+
 Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time overriding)
 
 Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions
+![Exceptions Hierarchy](https://github.com/schesa/interview-prep/blob/main/java-exceptions-hierarchy.png?raw=true)
 
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
@@ -16,8 +21,6 @@ Composition (part-of) vs Aggregation (has-a)
 Java is not a complete oop language (has primitives)
 
 Memory Model (multithreading - volatile to skip local thread cache)
-
-Memory Management
 
 Memory Structure
 - Method area: Perm,class structures, static fields
