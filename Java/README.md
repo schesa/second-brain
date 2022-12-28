@@ -6,6 +6,7 @@ JPA
 Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time overriding)
 
 Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions
+![Exceptions Hierarchy](https://github.com/schesa/interview-prep/blob/main/java-exceptions-hierarchy.png)
 
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
