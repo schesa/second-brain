@@ -68,7 +68,7 @@ Method reference String::toUpperCase()
 
 Testing mockito(doreturn().when()), mockmvc.perform(api)
 
-Object class methods ?
+Object class methods - toString,hashcode,equals,finalize(gc),notify,notifyAll,wait
 
 Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time overriding)
 
