@@ -1,8 +1,14 @@
 ### Spring
 
-JPA
-SpEL
-IoC Container
+JPA - @Entity, @OneToMany implemented with Hibernate, uses inside JDBC to send queries
+
+Spring Security
+
+SpEL expression language for query and manipulation
+
+@Required - if required field is not wired, container throws BeanInitializationException
+
+@Qualifier("bean name") - select which bean should be @Autowired
 
 Bean Scopes: 
 -Singleton(single instance in Spring IoC)
@@ -10,8 +16,6 @@ Bean Scopes:
 -Request(Http-Request)
 -Session(Http-session)
 -Global-session(Global Http-session)
-
-Spring Security
 
 IOC types: ApplicationContext, BeanFactory
 
@@ -35,7 +39,7 @@ Dependency Injection can be done via: Constructor, Setter, Interface(not support
 
 Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
 
-@RequestMapping("api/v2") class annotation?
+@RequestMapping("api/v2") - maps url to class/method
 
 @GetMapping("/{id}", produces = MediaType.APPLIACTION_JSON) f(@PathVariable id) 
 
@@ -51,7 +55,13 @@ Spring MVC - manual configuration, more dev time than Spring Boot, only Model Vi
 
 ### Java 
 
-Stream types?
+Stream types: terminal(reduce) and intermidate(map)
+
+Functional interface: lambda, predicates
+
+Method reference String::toUpperCase()
+
+Testing mockito(doreturn().when()), mockmvc.perform(api)
 
 Object class methods ?
 
