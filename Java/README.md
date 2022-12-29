@@ -37,7 +37,10 @@ Dependency Injection can be done via: Constructor, Setter, Interface(not support
 
 @Controller - necessary for @RequestMapping
 
-Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
+<details>
+  <summary>Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize</summary>
+![Spring MVC model](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/java-mvc-model.png)
+</details>
 
 @RequestMapping("api/v2") - maps url to class/method
 
@@ -69,14 +72,15 @@ Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time ov
 
 <details>
   <summary>Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions</summary>
-
 ![Exceptions Hierarchy](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/java-exceptions-hierarchy.png)
-
 </details>
 
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
-Thread lifecycle(New, Runnable, Running, Waiting, Dead)
+<details>
+  <summary>Thread lifecycle(New, Runnable, Running, Waiting, Dead)</summary>
+![Thread Lifecycle](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/Java-Thread-Lifecycle.png)
+</details>
 
 Thread can implement Runnable(flexible) or extend Thread
 
@@ -86,14 +90,18 @@ Java is not a complete oop language (has primitives)
 
 Memory Model (multithreading - volatile to skip local thread cache)
 
-Memory Structure
+<details>
+  <summary>Memory Structure</summary>
 - Method area: Perm,class structures, static fields
 - Heap Area: Eden,S0,S1,Old Generation
 - Stack Area: Thread memory, heap refferences, LVA,OS,FD
 - PC registers: thread dependent
 - Native method stack: OS dependent
+![Memory Model](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/Java-Memory-Model.png)
+</details>
 
-Double Brace Initialisation - with anonymous class - deprecated
+<details>
+  <summary>Double Brace Initialisation - with anonymous class - deprecated</summary>
 ```
     Set<String> countries = new HashSet<String>() {
         {
@@ -103,5 +111,6 @@ Double Brace Initialisation - with anonymous class - deprecated
         }
     };
 ```
+</details>
 
 This() and Super() need to be the first statement in a block(they can not coexist)
