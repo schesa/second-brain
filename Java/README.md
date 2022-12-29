@@ -1,5 +1,18 @@
 ### Spring
 
+Spring Application Context
+
+@Component - only Component is scanned. The other's interfaces are annotated with Component 
+
+@Repository - catch persistence exceptions and rethrow them as Spring unchecked exceptions
+
+@Service - indicates thet it's holding business logic
+
+@Controller - necessary for @RequestMapping
+
+Spring Bean Scope
+
+Spring Security
 
 Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
 
@@ -9,7 +22,7 @@ Spring MVC - manual configuration, more dev time than Spring Boot, only Model Vi
 
 @RequestBody deserializes HttpRequest body to a DTO to be used
 
-@ResponseBody serialize returned DTO to JSON and add it to HttpResponse 
+@ResponseBody serialize returned DTO to JSON and return it to HttpResponse 
 
 
 
