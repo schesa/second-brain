@@ -1,10 +1,16 @@
 ### Spring
 
-Spring Application Context vs BeanFactory
-
+JPA
 SpEL
-
 IoC Container
+
+IOC types: ApplicationContext, BeanFactory
+
+ApplicationContext(eager initialization, manages resources on its own) vs BeanFactory(doesn't support annotations)
+
+@Bean - method level annotation
+
+@Configuration - make @Bean methods singletons
 
 Dependency Injection can be done via: Constructor, Setter, Interface(not supported by Spring)
 
@@ -37,10 +43,6 @@ Spring MVC - manual configuration, more dev time than Spring Boot, only Model Vi
 @Controller vs @RestController
 - @Controller applied only on classes & mostly used in Spring MVC
 - @RestController = @Controller + @ResponseBody
--
-
-JPA
-
 
 ### Java 
 
