@@ -1,14 +1,14 @@
 ### Spring
 
-Spring Application Context
+Spring Application Context vs BeanFactory
 
 SpEL
 
 IoC Container
 
-Dependency Injection can be done via: Setter, Constructor, Interface(not supported by Spring)
+Dependency Injection can be done via: Constructor, Setter, Interface(not supported by Spring)
 
-@Autowired can be user for: Field, Setter, Constructor(preffered)
+@Autowired can be user for: Field, Constructor(preffered), Setter(overrides Contructor)
 
 @Component - only Component is scanned. The other's interfaces are annotated with Component 
 
