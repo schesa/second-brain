@@ -1,7 +1,8 @@
 ### Spring
 
 
-Spring MVC
+Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
+
 
 JPA
 
