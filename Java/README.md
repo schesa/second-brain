@@ -3,11 +3,29 @@
 
 Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
 
+@RequestMapping("api/v2") class annotation?
+
+@GetMapping("/{id}", produces = MediaType.APPLIACTION_JSON) f(@PathVariable id) 
+
+@RequestBody deserializes HttpRequest body to a DTO to be used
+
+@ResponseBody serialize returned DTO to JSON and add it to HttpResponse 
+
+
+
+@Controller vs @RestController
+- @Controller applied only on classes & mostly used in Spring MVC
+- @RestController = @Controller + @ResponseBody
+-
 
 JPA
 
 
 ### Java 
+
+Stream types?
+
+Object class methods ?
 
 Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time overriding)
 
