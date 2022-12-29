@@ -39,7 +39,9 @@ Dependency Injection can be done via: Constructor, Setter, Interface(not support
 
 <details>
   <summary>Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize</summary>
+  
 ![Spring MVC model](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/java-mvc-model.png)
+  
 </details>
 
 @RequestMapping("api/v2") - maps url to class/method
@@ -72,14 +74,18 @@ Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time ov
 
 <details>
   <summary>Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions</summary>
+  
 ![Exceptions Hierarchy](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/java-exceptions-hierarchy.png)
+  
 </details>
 
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
 <details>
   <summary>Thread lifecycle(New, Runnable, Running, Waiting, Dead)</summary>
+  
 ![Thread Lifecycle](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/Java-Thread-Lifecycle.png)
+  
 </details>
 
 Thread can implement Runnable(flexible) or extend Thread
@@ -97,11 +103,14 @@ Memory Model (multithreading - volatile to skip local thread cache)
 - Stack Area: Thread memory, heap refferences, LVA,OS,FD
 - PC registers: thread dependent
 - Native method stack: OS dependent
+  
 ![Memory Model](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/Java-Memory-Model.png)
+  
 </details>
 
 <details>
   <summary>Double Brace Initialisation - with anonymous class - deprecated</summary>
+  
 ```
     Set<String> countries = new HashSet<String>() {
         {
@@ -111,6 +120,7 @@ Memory Model (multithreading - volatile to skip local thread cache)
         }
     };
 ```
+  
 </details>
 
 This() and Super() need to be the first statement in a block(they can not coexist)
