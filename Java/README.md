@@ -2,6 +2,14 @@
 
 Spring Application Context
 
+SpEL
+
+IoC Container
+
+Dependency Injection can be done via: Setter, Constructor, Interface(not supported by Spring)
+
+@Autowired can be user for: Field, Setter, Constructor(preffered)
+
 @Component - only Component is scanned. The other's interfaces are annotated with Component 
 
 @Repository - catch persistence exceptions and rethrow them as Spring unchecked exceptions
