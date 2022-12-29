@@ -98,6 +98,7 @@ Memory Model (multithreading - volatile to skip local thread cache)
 
 <details>
   <summary>Memory Structure</summary>
+  
 - Method area: Perm,class structures, static fields
 - Heap Area: Eden,S0,S1,Old Generation
 - Stack Area: Thread memory, heap refferences, LVA,OS,FD
