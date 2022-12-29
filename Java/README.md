@@ -67,8 +67,12 @@ Object class methods ?
 
 Early/Static Binding(compile time overloading), Late/Dynamic Binding(run time overriding)
 
-Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions
-![Exceptions Hierarchy](https://github.com/schesa/interview-prep/blob/main/java-exceptions-hierarchy.png?raw=true)
+<details>
+  <summary>Throwable(Object), Errors(problems), Unchecked Exceptions(RuntimeExceptions), Exceptions</summary>
+
+![Exceptions Hierarchy](https://raw.githubusercontent.com/schesa/interview-prep/main/Java/java-exceptions-hierarchy.png)
+
+</details>
 
 Failfast(no modification) vs Failsafe(CopyOnWriteArray, ConcurrentMap)
 
