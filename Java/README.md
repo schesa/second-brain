@@ -4,6 +4,15 @@ JPA
 SpEL
 IoC Container
 
+Bean Scopes: 
+-Singleton(single instance in Spring IoC)
+-Prototype(many instances)
+-Request(Http-Request)
+-Session(Http-session)
+-Global-session(Global Http-session)
+
+Spring Security
+
 IOC types: ApplicationContext, BeanFactory
 
 ApplicationContext(eager initialization, manages resources on its own) vs BeanFactory(doesn't support annotations)
@@ -23,10 +32,6 @@ Dependency Injection can be done via: Constructor, Setter, Interface(not support
 @Service - indicates thet it's holding business logic
 
 @Controller - necessary for @RequestMapping
-
-Spring Bean Scope
-
-Spring Security
 
 Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize
 
