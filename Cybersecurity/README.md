@@ -5,48 +5,34 @@
 
 #### **Variables**
 
-typeset -i (integer)
-
-declare -i (integer)
-
+typeset -i (integer)  
+declare -i (integer)  
 declare -r (readonly constant)
 
 #### **Arrays**
 
-typeset -a foo=(a b c)
-
+typeset -a foo=(a b c)  
 typeset -A associative-array (dict)
 
-echo $foo
-
-\# a
-
-echo ${foo[@]}
-
-\# a b c
-
-echo $foo[@]
-
-\# a[@]
-
-echo ${#foo}
-
+echo $foo  
+\# a  
+echo ${foo[@]}  
+\# a b c  
+echo $foo[@]  
+\# a[@]  
+echo ${#foo}  
 \# 3
 
 ${#VAR} - calculates the length of value $VAR or array length
 
 #### **Brace expansion**
 
-ex. echo {f..a}; echo {2,6,9}
-
+ex. echo {f..a}; echo {2,6,9}  
 ${}
 
 #### **Command substitution**
 
-$() or \`...\` 
-
-ex. echo "hello $( s=world; echo "$s" )"
-
-$() is preffered - modern, can use nested commands, backtiks are considered "deprecated"
-
+$() or \`...\`   
+ex. echo "hello $( s=world; echo "$s" )"  
+$() is preffered - modern, can use nested commands, backtiks are considered "deprecated"  
 Read command also uses a subshell for execution
