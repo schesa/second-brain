@@ -23,8 +23,10 @@ echo ${foo[@]}
 \# a b c
 echo $foo[@]
 \# a[@]
+echo ${#foo}
+\# 3
 
-${#VAR} - calculates the length of value $VAR
+${#VAR} - calculates the length of value $VAR or array length
 
 #### **Brace expansion**
 
