@@ -5,7 +5,9 @@
 
 **Command substitution**
 
-$() or \`...\` ex. echo "hello $( s=world; echo "$s" )"
+$() or \`...\` 
+
+ex. echo "hello $( s=world; echo "$s" )"
 
 $() is preffered - modern, can use nested commands, backtiks are considered "deprecated"
 
