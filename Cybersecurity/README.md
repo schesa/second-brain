@@ -18,12 +18,19 @@ typeset -a foo=(a b c)
 typeset -A associative-array (dict)
 
 echo $foo
+
 \# a
+
 echo ${foo[@]}
+
 \# a b c
+
 echo $foo[@]
+
 \# a[@]
+
 echo ${#foo}
+
 \# 3
 
 ${#VAR} - calculates the length of value $VAR or array length
