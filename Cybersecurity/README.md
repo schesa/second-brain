@@ -3,7 +3,7 @@
 
 # Linux
 
-Command substitution
+**Command substitution**
 
 $() or \`...\` ex. echo "hello $( s=world; echo "$s" )"
 
