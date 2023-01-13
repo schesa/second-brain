@@ -45,7 +45,8 @@ Read command also uses a subshell for execution
 
 #### **Systemd**
 
-Service active(running)  
-```systemctl enable NetworkManager``` - service is configured to start at system boot time
-
+```systemctl start NetworkManager``` - service is running(active)  
+```systemctl is-active NetworkManager``` - check if service is active  
+```systemctl enable NetworkManager``` - service is configured to start at system boot time  
+```systemctl is-enabled NetworkManager``` - check if service is enabled  
 
