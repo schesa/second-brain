@@ -20,7 +20,7 @@ echo ${foo[@]}
 \# a b c  
 echo $foo[@]  
 \# a[@]  
-echo ${#foo}  
+echo ${#foo}
 \# 3
 
 ${#VAR} - calculates the length of value $VAR or array length
@@ -29,6 +29,12 @@ ${#VAR} - calculates the length of value $VAR or array length
 
 ex. echo {f..a}; echo {2,6,9}  
 ${}
+
+#### **Parameter expansion**
+
+${var^^} - all uppercase
+${var:-$default} - default if var is unset
+
 
 #### **Command substitution**
 
