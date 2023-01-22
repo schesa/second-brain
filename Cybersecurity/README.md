@@ -61,3 +61,12 @@ $   systemctl enable NetworkManager   # disable
 $   systemctl is-enabled NetworkManager
 ```
 
+
+#### **HereDoc** - for multiline input, works also with ssh
+
+```shell
+cat << EOF > file.txt
+The current working directory is: $PWD
+You are logged in as: $(whoami)
+EOF
+```
