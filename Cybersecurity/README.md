@@ -62,7 +62,8 @@ $   systemctl is-enabled NetworkManager
 ```
 
 
-#### **HereDoc** - for multiline input, works also with ssh
+#### **HereDoc**  
+For multiline appending. Works also with ssh
 
 ```shell
 cat << EOF > file.txt
