@@ -66,7 +66,7 @@ $   systemctl is-enabled NetworkManager
 For multiline appending. Works also with ssh
 
 ```shell
-cat << EOF > file.txt
+cat << EOF >> file.txt
 The current working directory is: $PWD
 You are logged in as: $(whoami)
 EOF
