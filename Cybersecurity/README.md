@@ -1,4 +1,14 @@
-# IEC 62443
+# Cybersecurity
+
+## Introduction to Control Systems Security 
+
+**Electronic Security** = actions required to protect critical systems/informational assets from: unauthorized use, DOS, modifications, disclousure, destruction  
+**Electronic** = critical systems/informational assets  
+**Control system** = hardware and software components of an IACS(Industrial Automation and Control System)  
+**Cybersecurity** = measures taken to protect a computer system against unauthorized access or attack
+
+The extensive use of COTS and common protocols lead to: adversaries know the technology stack & business systems have shared risks  
+Remote monitoring/access -> bigger attack surface
 
 
 # Linux
