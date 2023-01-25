@@ -1,41 +1,37 @@
 # Spring
 
-JPA - @Entity, @OneToMany implemented with Hibernate, uses inside JDBC to send queries
+JPA - `@Entity`, `@OneToMany` implemented with Hibernate, uses inside JDBC to send queries
 
 Spring Security
 
 SpEL expression language for query and manipulation
 
-@Required - if required field is not wired, container throws BeanInitializationException
+`@Required` - if required field is not wired, container throws BeanInitializationException
 
-@Qualifier("bean name") - select which bean should be @Autowired
+`@Qualifier("bean name")` - select which bean should be @Autowired
 
-Bean Scopes: 
--Singleton(single instance in Spring IoC)
--Prototype(many instances)
--Request(Http-Request)
--Session(Http-session)
--Global-session(Global Http-session)
+Bean Scopes:  
+-Singleton(single instance in Spring IoC)  
+-Prototype(many instances)  
+-Request(Http-Request)  
+-Session(Http-session)  
+-Global-session(Global Http-session)  
 
-IOC types: ApplicationContext, BeanFactory
+IOC types: ApplicationContext, BeanFactory  
+ApplicationContext - eager initialization, manages resources on its own  
+BeanFactory - doesn't support annotations
 
-ApplicationContext(eager initialization, manages resources on its own) vs BeanFactory(doesn't support annotations)
+`@Bean` - method level annotation  
+`@Configuration` - make `@Bean` methods singletons
 
-@Bean - method level annotation
+Dependency Injection can be done via: Constructor, Setter, Interface(not supported by Spring)  
+`@Autowired` can be user for: Field, Constructor(preffered), Setter(overrides Contructor)
 
-@Configuration - make @Bean methods singletons
+`@Component` - only Component is scanned. The other's interfaces are annotated with Component   
+`@Repository` - catch persistence exceptions and rethrow them as Spring unchecked exceptions  
+`@Service` - indicates thet it's holding business logic
 
-Dependency Injection can be done via: Constructor, Setter, Interface(not supported by Spring)
-
-@Autowired can be user for: Field, Constructor(preffered), Setter(overrides Contructor)
-
-@Component - only Component is scanned. The other's interfaces are annotated with Component 
-
-@Repository - catch persistence exceptions and rethrow them as Spring unchecked exceptions
-
-@Service - indicates thet it's holding business logic
-
-@Controller - necessary for @RequestMapping
+`@Controller` - necessary for `@RequestMapping`
 
 <details>
   <summary>Spring MVC - manual configuration, more dev time than Spring Boot, only Model View Controller needed to customize</summary>
@@ -44,19 +40,14 @@ Dependency Injection can be done via: Constructor, Setter, Interface(not support
   
 </details>
 
-@RequestMapping("api/v2") - maps url to class/method
+`@RequestMapping("api/v2")` - maps url to class/method  
+`@GetMapping("/{id}", produces = MediaType.APPLIACTION_JSON) f(@PathVariable id) `  
+`@RequestBody` deserializes HttpRequest body to a DTO to be used  
+`@ResponseBody` serialize returned DTO to JSON and return it to HttpResponse 
 
-@GetMapping("/{id}", produces = MediaType.APPLIACTION_JSON) f(@PathVariable id) 
-
-@RequestBody deserializes HttpRequest body to a DTO to be used
-
-@ResponseBody serialize returned DTO to JSON and return it to HttpResponse 
-
-
-
-@Controller vs @RestController
-- @Controller applied only on classes & mostly used in Spring MVC
-- @RestController = @Controller + @ResponseBody
+`@Controller` vs `@RestController`  
+- `@Controller` applied only on classes & mostly used in Spring MVC
+- `@RestController` = `@Controller` + `@ResponseBody`
 
 # Java 
 
@@ -64,9 +55,9 @@ Stream types: terminal(reduce) and intermidate(map)
 
 Functional interface: lambda, predicates
 
-Method reference String::toUpperCase()
+Method reference `String::toUpperCase()`
 
-Testing mockito(doreturn().when()), mockmvc.perform(api)
+Testing `mockito(doreturn().when()), mockmvc.perform(api)`
 
 Object class methods - toString,hashcode,equals,finalize(gc),notify,notifyAll,wait
 
