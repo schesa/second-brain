@@ -18,7 +18,7 @@ Bean Scopes:
 -Global-session(Global Http-session)  
 
 IOC types: ApplicationContext, BeanFactory  
-ApplicationContext - eager initialization, manages resources on its own  
+ApplicationContext - eager initialization, manages resources on its own ( _XmlWebApplicationContext_ , _AnnotationConfigApplicationContext_)  
 BeanFactory - doesn't support annotations
 
 `@Bean` - method level annotation  
